@@ -253,6 +253,9 @@ function loadKD() {
     patch(AudioPlayInstantSound, {
         'audio.src = src': 'audio.crossOrigin = "Anonymous";\naudio.src = remap(src)'
     });
+    patch(AudioPlayInstantSoundKD, {
+        'audio.src = src': 'audio.crossOrigin = "Anonymous";\naudio.src = remap(src)'
+    });
     
     // Bootstrap BC enough to be able to run KD
     KinkyDungeonMainRun = () => {};
