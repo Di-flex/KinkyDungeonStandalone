@@ -253,7 +253,7 @@ function loadKD() {
     patch(AudioPlayInstantSound, {
         'audio.src = src': 'audio.crossOrigin = "Anonymous";\naudio.src = remap(src)'
     });
-	if (AudioPlayInstantSoundKD)
+	if (AudioPlayInstantSoundKD != undefined)
 		patch(AudioPlayInstantSoundKD, {
 			'audio.src = src': 'audio.crossOrigin = "Anonymous";\naudio.src = remap(src)'
 		});
