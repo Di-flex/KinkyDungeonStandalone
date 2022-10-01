@@ -239,6 +239,8 @@ function loadAfterImageCache() {
 
 function loadKD() {
 
+    DrawProcessScreenFlash = () => {};
+
     // Patch image loading to redirect to repo
     patch(GLDrawLoadImage, {
         'GLDrawLoadImage(gl, url) {': 'GLDrawLoadImage(gl, url) {\nurl = remap(url);',
