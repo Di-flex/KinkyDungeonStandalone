@@ -314,6 +314,7 @@ function loadKD() {
     Player.OnlineSharedSettings.ItemsAffectExpressions = true
     Player.AudioSettings = {};
     Player.AudioSettings.Volume = 1;
+	Player.ImmersionSettings = {};
 
     CharacterAppearanceSetDefault(Player);
     CurrentCharacter = null; 
