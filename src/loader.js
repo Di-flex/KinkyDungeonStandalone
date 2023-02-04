@@ -1,5 +1,5 @@
 // Project id for Ada18980/BondageCollege
-const PROJECT = '33083';
+const PROJECT = '18215';
 const BRANCH = 'master';
 
 let project = PROJECT;
